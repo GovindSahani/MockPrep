@@ -2,7 +2,7 @@
   "name": "mockprep",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install --prefix client && npm install --prefix server && npm run build --prefix client",
+    "build": "npm install --prefix client --include=dev && npm install --prefix server && npm run build --prefix client",
     "start": "node server/server.js"
   }
 }
