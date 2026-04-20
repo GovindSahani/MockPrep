@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
 
   // SPA catch-all: any route not matched by API goes to index.html
-  app.get('*', (req, res) => {
+  app.get('/{*splat}', (req, res) => {
     res.sendFile(path.resolve(__dirname, '..', 'client', 'dist', 'index.html'));
   });
 }
