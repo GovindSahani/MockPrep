@@ -744,16 +744,14 @@ select.input-field option {
   justify-content: center;
 }
 .google-btn-container {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 /* Make the Google-rendered iframe fill container width */
 .google-btn-container > div {
-  width: 100% !important;
+  width: auto !important;
 }
 .google-btn-container iframe {
-  width: 100% !important;
   border-radius: 8px !important;
 }
 
